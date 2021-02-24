@@ -25,7 +25,7 @@ public class OperadoresLogicos {
 		System.out.println(cadena);
 		
 		
-		String numero = (z % 2 == 0) ? "Es par" : "Es impar";
+		String numero = (z % 2 == 0) ? "Es par." : "Es impar.";
 		System.out.println(numero);
 	}
 
