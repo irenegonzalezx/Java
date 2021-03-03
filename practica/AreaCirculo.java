@@ -2,18 +2,18 @@ package practica;
 
 import java.util.Scanner;
 
-public class √ÅreaCirculo {
+public class AreaCirculo {
 
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Escribe el radio del c√≠rculo:");
+		System.out.println("Escribe el radio del c·culo:");
 		double radio = scan.nextDouble();
 		
 		double area = (3.1416 * (radio * radio));
 		
-		System.out.println("El √°rea del circulo es: " + area + ".");
+		System.out.println("El ·rea del circulo es: " + area + ".");
 		
 		
 		
