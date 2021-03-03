@@ -2,6 +2,14 @@ package clases;
 
 public class Persona {
 
+	public int getEdad() {
+		return Edad;
+	}
+
+	public void setEdad(int edad) {
+		Edad = edad;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -23,6 +31,7 @@ public class Persona {
 
 	private String nombre;
 	private long Salario;
+	private int Edad;
 
 	public String setNombre;
 
