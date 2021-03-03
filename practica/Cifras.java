@@ -15,7 +15,7 @@ public class Cifras {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Escribe el nÃºmero:");
+		System.out.println("Escribe el número:");
 		String cadena = scan.nextLine();
 		
 		double numero = Double.parseDouble(cadena);
@@ -37,7 +37,7 @@ public class Cifras {
 			}
 		}
 		
-		System.out.println("El nÃºmero tiene " + contador + " cifras.");
+		System.out.println("El número tiene " + contador + " cifras.");
 		
 		}
 		scan.close();
