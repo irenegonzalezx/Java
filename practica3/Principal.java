@@ -14,7 +14,9 @@ public class Principal {
 			//a1.tabla10por10();
 			//a1.rectangulo();
 			//a1.rectangulo1(4,5);
-			a1.cubo();
+			//a1.cubo();
+			//a1.mayor(1, 2);
+			a1.volumencilindro(10, 4);
 	}
 
 }
