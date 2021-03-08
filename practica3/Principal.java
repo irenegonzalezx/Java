@@ -10,13 +10,13 @@ public class Principal {
 			//a1.tablas();
 			//a1.tablas1();
 			//a1.tabla5por5();
-			//a1.tabla7por7();
+			a1.tabla7por7();
 			//a1.tabla10por10();
 			//a1.rectangulo();
 			//a1.rectangulo1(4,5);
 			//a1.cubo();
 			//a1.mayor(1, 2);
-			a1.volumencilindro(10, 4);
+			//a1.volumencilindro(10, 4);
 	}
 
 }

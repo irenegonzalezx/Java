@@ -172,18 +172,6 @@ public class Arrays {
 		}
 	}
 
-	public void tabla10por10() {
-		int[][] tabla = new int[10][10];
-
-		for (int i = 0; i < tabla.length; i++) {
-			for (int j = 0; j < tabla.length; j++) {
-				tabla[i][j] = (int) (Math.random() * 10) + 1;
-				System.out.print(tabla[i][j] + " ");
-			}
-		}
-
-	}
-
 	public void rectangulo() {
 
 		Scanner scan = new Scanner(System.in);
