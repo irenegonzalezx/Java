@@ -59,25 +59,28 @@ public class Factura {
 		this.descuento = descuento;
 	}
 
+	
+	//IMPORTANTE: LAS PROPERTIES TIENEN QUE IR CON SET, NO SOLAS: CAMBIAR TODAS A setProperty
+	
 	public void altafactura() {
 		System.out.println("Alta de la factura:");
 
 		Scanner scan = new Scanner(System.in);
 
 		System.out.println("Código de la factura:");
-		cod_factura = scan.nextInt();
+		setCod_factura(scan.nextInt());
 
 		System.out.println("Código del cliente:");
-		cod_cliente = scan.nextInt();
+		setCod_factura(scan.nextInt());
 
 		System.out.println("Nombre del producto:");
-		nombreproducto = scan.next();
+		setNombreproducto(scan.next());
 
 		System.out.println("Precio:");
-		precio = scan.nextDouble();
+		setPrecio(scan.nextDouble());
 
 		System.out.println("Unidades:");
-		unidad = scan.nextInt();
+		setUnidad(scan.nextInt());
 
 		String haydescuento;
 		do {
@@ -85,7 +88,7 @@ public class Factura {
 			haydescuento = scan.next().toUpperCase();
 		} while (!haydescuento.equals("Y") && !haydescuento.equals("N"));
 
-		descuento = haydescuento.equals("Y");
+		setDescuento(haydescuento.equals("Y"));
 		scan.close();
 	}
 
@@ -93,13 +96,13 @@ public class Factura {
 
 		switch (campo) {
 		case "cod_factura":
-			cod_factura = valor;
+			setCod_factura(valor);
 			break;
 		case "cod_cliente":
-			cod_cliente = valor;
+			setCod_cliente(valor);
 			break;
 		case "unidad":
-			unidad = valor;
+			setUnidad(valor);
 			break;
 		}
 
@@ -109,7 +112,7 @@ public class Factura {
 
 		switch (campo) {
 		case "precio":
-			precio = valor;
+			setPrecio(valor);
 			break;
 
 		}
@@ -120,7 +123,7 @@ public class Factura {
 
 		switch (campo) {
 		case "nombreproducto":
-			nombreproducto = valor;
+			setNombreproducto(valor);
 			break;
 
 		}
@@ -131,7 +134,7 @@ public class Factura {
 
 		switch (campo) {
 		case "descuento":
-			descuento = valor;
+			setDescuento(valor);
 			break;
 
 		}
@@ -140,12 +143,12 @@ public class Factura {
 
 	public void verfactura() {
 		System.out.println("Datos de la factura: ");
-		System.out.println("Código de la factura: " + cod_factura);
-		System.out.println("Código del cliente: " + cod_cliente);
-		System.out.println("Nombre del producto: " + nombreproducto);
-		System.out.println("Precio: " + precio + " euros");
-		System.out.println("Unidades " + unidad);
-		System.out.println("Descuento: " + descuento);
+		System.out.println("Código de la factura: " + getCod_factura());
+		System.out.println("Código del cliente: " + getCod_cliente());
+		System.out.println("Nombre del producto: " + getNombreproducto());
+		System.out.println("Precio: " + getPrecio() + " euros");
+		System.out.println("Unidades " + getUnidad());
+		System.out.println("Descuento: " + isDescuento());
 	}
 
 }

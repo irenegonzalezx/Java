@@ -271,5 +271,32 @@ public class Metodosp4 {
 		else
 			System.out.println("El array no es capicúa.");
 	}
+	
+	public void capicua1() {
+		int[] grupo = new int[5];
+		
+		Scanner scan = new Scanner(System.in);
+
+		for (int i = 0; i < grupo.length; i++) {
+			System.out.print("Introduce cinco números: ");
+			grupo[i] = scan.nextInt();
+
+		}
+		
+		scan.close();
+
+		int contleft = 0;
+		int contright = grupo.length - 1;
+		boolean escapicua = true;
+
+		while (contleft <= contright && escapicua) {
+			escapicua = (grupo[contleft++] == grupo[contright--]);
+		}
+
+		if (escapicua)
+			System.out.println("El array es capicúa.");
+		else
+			System.out.println("El array no es capicúa.");
+	}
 
 }

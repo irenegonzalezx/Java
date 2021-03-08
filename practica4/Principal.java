@@ -14,8 +14,9 @@ public class Principal {
 		//mp4.arraymayor(3, 10, 2, 7, 5);
 		//mp4.binario();
 		//mp4.grados();
-		mp4.grados1(15.4);
+		//mp4.grados1(15.4);
 		//mp4.capicua(2,2,3,2,1);
+		mp4.capicua1();
 		
 
 	}
