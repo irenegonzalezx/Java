@@ -11,6 +11,10 @@ public class PrincipalAnimal {
 		perro.setColor("blanco");
 		System.out.println(perro.sonido());
 		System.out.println(perro);
+		
+		Gato michi = new Gato();
+		System.out.println(michi.sonido());
+		
 	}
 
 
