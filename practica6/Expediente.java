@@ -6,6 +6,20 @@ public class Expediente {
 	private String tipo;
 	private String responsable;
 	private String descripcion;
+	
+	public Expediente() {
+		
+	}
+	
+	//Los constructores no se heredan en los hijos
+	public Expediente(int codexpediente, String tipo){
+		setCodexpediente(codexpediente);
+		setTipo(tipo);
+	}
+	
+	public String tipoclase() {
+		return "Expediente";
+	}
 
 	public int getCodexpediente() {
 		return codexpediente;
@@ -51,7 +65,7 @@ public class Expediente {
 	}
 
 	public void verdatos() {
-		System.out.println(getCodexpediente() + " " + getTipo() + " " + getResponsable() + " " + getDescripcion());
+		System.out.println("Datos del expediente: " + getCodexpediente() + " " + getTipo() + " " + getResponsable() + " " + getDescripcion());
 	}
 
 }
