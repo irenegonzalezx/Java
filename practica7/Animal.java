@@ -4,6 +4,8 @@ public class Animal {
 	
 	private int patas;
 	private String color;
+	private boolean castrado;
+	private char sexo;
 	
 	
 	public int getPatas() {
@@ -22,11 +24,31 @@ public class Animal {
 	public String sonido() {
 		return "Sonido del animal";
 	}
+	public boolean isCastrado() {
+		return castrado;
+	}
+	public void setCastrado(boolean castrado) {
+	
+		this.castrado = castrado;
+	}
+	public char getSexo() {
+		return sexo;
+	}
+	public void setSexo(char sexo) {
+		if (sexo != 'H' || sexo != 'M')
+		{
+			this.sexo = 'M';
+		}this.sexo = sexo;
+	}
+	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Es un animal de color " + getColor() + " y tiene " + getPatas() + " patas.";
 	}
 	
+	public String chip() {
+		return ("Código-AA-" + Math.random()*5000 + 1);
+	}
 	
 }
