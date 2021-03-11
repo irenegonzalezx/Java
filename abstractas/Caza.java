@@ -34,6 +34,18 @@ public class Caza extends Avion {
 		return "Reposto en tierra y en vuelo.";
 	}
 	
-	
+	@Override
+	public boolean equals(Object obj) {
+		
+		// Convertir objeto a Caza
+		Caza caza2 = (Caza) obj;
+		
+		if(this.getPotencia() == caza2.getPotencia()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 	
 }
