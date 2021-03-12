@@ -7,7 +7,6 @@ public class Empleado {
 	
 	//Constructor por defecto
 	Empleado() {
-		
 	}
 	
 	//Constructor con parámetros
